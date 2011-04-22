@@ -107,8 +107,6 @@
 							  <i>this is very</i><b>very</b> <span style = \"font-size:120%%\">interesting text</span><br>row number: <b>%d</b></body>", indexPath.row]
 					baseURL:nil];
 	
-	//CFRunLoopRef runLoop = [[NSRunLoop currentRunLoop] getCFRunLoop];
-	//CFRunLoopRunInMode((CFStringRef)NSDefaultRunLoopMode, 1, NO);
 	
 	return cell;
 }
@@ -118,15 +116,6 @@
 
 -(void) webViewDidFinishLoad:(UIWebView *)webView
 {
-	//NSInteger i = 0;
-	//[self performSelector:@selector(stopRunLoop) withObject:nil afterDelay:.01];
-}
-
--(void) stopRunLoop
-{
-	CFRunLoopRef runLoop = [[NSRunLoop currentRunLoop] getCFRunLoop];
-	CFRunLoopStop(runLoop);
-	
 }
 
 
